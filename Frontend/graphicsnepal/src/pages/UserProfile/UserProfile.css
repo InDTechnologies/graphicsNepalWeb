@@ -1,0 +1,276 @@
+.userDiv{
+    display: flex;
+    padding:4% 8%;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.profileImg{
+    height: 150px;
+    width: 150px;
+    background:url("https://images.unsplash.com/photo-1425421669292-0c3da3b8f529?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.userInfo{
+    padding: 4rem;
+    background-color: white;
+    flex: 1.2;
+    margin: 0 20px;
+    border:.5px solid rgb(0 0 0 / 12%);
+    position: relative;
+    max-height: 800px;
+}
+
+@keyframes zero {
+
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-150%);
+        opacity: 0;
+
+    }
+    
+}
+
+.editPP{
+    font-size: 1.3rem;
+    background: var(--bigTextColor);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+.editP{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.editPP:hover{
+    cursor: pointer;
+}
+
+.userNamePic{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nameU{
+    margin-top: 3rem;
+}
+
+.location{
+    margin: 5px 0;
+    color: rgba(0, 0, 0, 0.8);
+}
+.location i{
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+
+.tabSection{
+    padding:4rem;
+    flex: 2;
+    margin: 0 20px;
+    background: white;
+    border:.5px solid rgb(0 0 0 / 12%);
+    height: 660px;
+    overflow-y: auto;
+}
+
+.tabInfo{
+    display: flex;
+    border-bottom: 1.5px solid rgb(0 0 0 / 12%);
+    padding-bottom: 10px;
+}
+.tabInfo h3{
+    font-size: 1.6rem;
+    margin:0 20px ;
+    font-weight: 600;
+}
+
+.tabInfo h3:hover{
+    cursor: pointer;
+}
+
+
+.actualTabs{
+    margin: 20px;
+}
+
+.dT{
+    margin: 20px 0;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: rgba(0, 0, 0, 0.685);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dT i{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    border: 1px solid rgba(0, 0, 0, 0.685);
+}
+
+.dT i:hover{
+    cursor: pointer;
+}
+
+.skillsList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chip-skills{
+    margin:10px;
+    margin-bottom: 0;
+    border-radius:30px;
+    width: fit-content;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    background-color: #e2e2e2a3;
+}
+.chip-skills:hover{
+    background: #e2e2e2;
+    cursor: pointer;
+}
+
+.description{
+    line-height: 1.6em;
+}
+
+.myser,.myport,.myhist{
+    position: relative;
+    transition: .5s linear;
+}
+
+.myser::before,.myport::before,.myhist::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background: var(--bigTextColor);
+    transition: .5s linear;
+}
+
+.makeflex, .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.help{
+   margin-left: 40%;
+ font-size: 2rem;
+ color: rgba(0, 0, 0, 0.692);
+ position: relative;
+}
+
+.help:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.help::after{
+    display: none;
+    content: "3 days tour photography at Rs.25000";
+    font-size: 1.4rem;
+    position: absolute;
+    top: 24px;
+    right: -59px;
+    font-family: 'Nuniti Sans',sans-serif;
+    color: rgba(0, 0, 0, 0.692);
+    line-height: 1.6em;
+}
+
+.help:hover::after{
+    display: block;
+}
+
+.serviceGig .offerCard img{
+    width: 100%;
+    height: 100%!important;
+}
+
+
+.tabSection{
+    position: relative;
+}
+
+.makebig{
+    position: absolute;
+    top: 40px;
+    right:40px;
+    font-size: 2rem;
+}
+.makebig:hover{
+    cursor: pointer;
+}
+
+@media(max-width:1300px){
+    .userDiv{
+        padding: 4%;
+    }
+    .userNamePic{
+        display: block;
+    }
+    .nameU h2{
+        margin: 1.5rem 0;
+    }
+}
+
+@media(max-width:1140px) {
+
+    .tabSection{
+        padding: 4rem 2rem;
+        margin: 0;
+    }
+    
+}
+
+@media(max-width:1040px) {
+
+    .userDiv{
+        margin-top: 95px;
+    }
+}
+
+@media(max-width:1020px){
+    .userDiv{
+        display: block;
+    }
+    .userInfo{
+        margin: 0;
+    }
+    .tabSection{
+        margin: 30px 0;
+        height: auto;
+    }
+    .makebig{
+        display: none;
+    }
+
+}
+
+@media (max-width:420px) {
+
+    .userDiv{
+        padding: 4% 1%;
+    }
+    
+}

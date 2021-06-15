@@ -1,0 +1,147 @@
+nav{
+    display: flex;
+    align-items: center;
+    padding:30px 8%;
+    box-shadow: rgba(50, 53, 59, 0.15) 0px 2px 2px -1px;
+}
+
+.logo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.navigation{
+    flex: 4;
+}
+
+.nav_lists{
+    display: flex;
+    padding-left: 5%;
+}
+
+.nav_lists li{
+    margin: 0 15px;
+    list-style: none;
+    font-weight: 500;
+}
+
+.nav_lists li a{
+    color: var(--blackShade);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+.login_signup a{
+    display: block;
+}
+
+.login_signup p{
+    font-size: 1.5rem;
+
+}
+
+.login_signup{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.signupbtn{
+    margin-right: 20px;
+}
+.loginbtn{
+    transition: .2s linear;
+}
+.loginbtn:hover{
+    background: var(--lightBtn);
+    transition: .2s linear;
+}
+
+.smallNav {
+    font-size: 4rem;
+}
+
+.smallNav i:hover{
+    cursor: pointer;
+}
+
+.smallMenu{display: none;}
+
+
+@media(max-width:1040px){
+
+.smallMenu{display: block;}
+        nav{
+            display: none;
+        }
+        .miniHeader{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 5%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            z-index: 7899;
+    box-shadow: rgba(50, 53, 59, 0.15) 0px 2px 2px -1px;
+
+        }
+        
+.navigation{
+    padding: 10px 0%;
+    position: fixed;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    z-index: 1211;
+    height: calc(100vh + 94px);
+    background: white;
+   animation: .3s navAni linear;
+   
+}
+
+@keyframes navAni {
+
+    0%{
+        height: 0%;
+    }
+    100%{ 
+        height: calc(100vh + 94px);
+    }
+    
+}
+.nav_lists{
+    display: block;
+    padding-left: 0;
+}
+
+.nav_lists li{
+    margin:15px 0px;
+    list-style: none;
+    font-weight: 500;
+    padding: 20px 5%;
+}
+.nav_lists li:hover{
+    background-color: #f7f7f7;
+}
+
+.nav_lists li a{
+    color: var(--blackShade);
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.login_signup{
+    padding: 20px 5%;
+}
+
+
+
+    }

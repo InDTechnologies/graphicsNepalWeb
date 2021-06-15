@@ -1,0 +1,127 @@
+.see_works{
+    padding: 30px 8%;
+}
+
+.see_works img{
+    width: 100%;
+}
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+  }
+  
+  /* Style your items */
+  .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    margin-bottom: 30px;
+  }
+
+  .options{
+    margin: 20px 0;
+    display: flex;
+    position: relative;
+  }
+
+  .pTag{
+    margin: 15px 50px;
+    margin-left: 0;
+    font-weight: bolder;
+    color: var(--blackShade);
+    position: relative;
+  }
+
+
+  .pTag:hover{
+    cursor: pointer;
+    color: var(--orange);
+  }
+  .activeSee{
+    color: var(--orange);
+  }
+
+  .options::after{
+     position: absolute;
+     content: "";
+     height: 3px;
+     background: var(--orange);
+     width:15px;
+     left: var(--slider);
+     bottom: 0px;
+     transition: .2s linear;
+  }
+
+  .grow{
+    animation: grow .4s ease-in-out;
+    overflow: hidden;
+  }
+
+  .grow img{
+    transition: .2s linear;
+ }
+
+  .grow img:hover{
+     transform: scale(1.1);
+     transition: .2s linear;
+  }
+
+  @keyframes grow {
+
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+
+  .seeMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px 0;
+  }
+  .seeMore a{
+    border: 1px solid var(--bigTextColor);
+    padding: 15px 60px;
+    color: var(--bigTextColor);
+    position: relative;
+    transition: .3s linear;
+    border-radius: 5px;
+  }
+
+  .seeMore h2{
+   font-size: 2rem;
+  }
+
+  .seeMore a:hover{
+    background-color: var(--bigTextColor);
+    color: white;
+    transition: .3s linear;
+  }
+
+  @media(max-width:1300px){
+
+  }
+
+@media(max-width:1040px){
+  .see_works{
+    padding: 0 5%;
+  }
+  .seeMore{
+    margin: 20px 0;
+    margin-bottom: 50px;
+  }
+  .seeMore a {
+    padding: 10px 45px;
+}
+.seeMore h2 {
+  font-size: 1.8rem;
+}
+}

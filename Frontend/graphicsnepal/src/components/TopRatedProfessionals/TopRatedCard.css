@@ -1,0 +1,32 @@
+.offerCard img{
+    height:250px;
+    width: 100%;
+}
+.offerCard {
+    margin: 0 10px;
+}
+
+.offerCard h3{
+    font-size: 1.5rem;
+    color: var(--blackShade);
+    margin: 1.5rem 0;
+}
+
+/* .slick-prev:before, .slick-next:before {
+    font-size: 5rem!important;
+    color: black!important;
+} */
+
+@media(max-width:620px){
+  
+    .offerCard img{
+        height:200px;
+    }
+    .offerCard h3 {
+        font-size: 1.4rem;
+        margin: 1rem 0;
+    }
+    .myCustom {
+        margin: 25px 0;
+    }
+}

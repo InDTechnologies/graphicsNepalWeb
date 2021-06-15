@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;font-family: 'Nunito Sans',sans-serif;font-size: 62.5%;
+}
+
+:root{
+    --bigTextColor:#227C9D;
+    --lightBtn:#0BA1AF;
+    --blackShade:rgba(0,0,0,0.7);
+    --orange:#FE6D73;
+    --linkType:#0029FF;
+    --yelloShade:#FEF9EF;
+    --slider:0%;
+}
+
+h1,h2,h4,h4{
+    font-size: 2.5rem;
+}
+
+a,p,span,div,section{
+    color: black;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.roundbtn{
+    padding: 0.8rem 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--bigTextColor);
+    color: white;
+}
+
+.roundbtn:hover{cursor: pointer;}
+
+.rectbtn{
+    padding: 1rem 6rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--lightBtn);
+    color: white;
+}
+
+.bigHeading{
+    color: var(--bigTextColor);
+    font-size: 5rem;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    position: relative;
+}
+
+.bigHeading::after{
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 10%;
+    background: var(--bigTextColor);
+    bottom: -15px;
+    left: 0;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

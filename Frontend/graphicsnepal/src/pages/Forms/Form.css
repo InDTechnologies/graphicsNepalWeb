@@ -1,0 +1,95 @@
+.formWidthH{
+    position: fixed;
+    background-color: #00000096;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 127833;
+    margin: 0!important;
+}
+
+.formWidthH form{
+    background: white;
+    border-radius: 10px;
+}
+.cancel:hover{
+    cursor: pointer;
+}
+
+.formWidthH textarea{
+    background: red!important;
+}
+
+.serV form{
+    width: 50%;
+}
+
+.tox-statusbar__branding a{
+    display: none!important;
+}
+
+.chip-skills span{
+    font-size: 1.4rem;
+}
+
+.chip-skills{
+    position: relative;
+}
+
+.chip-skills i{
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    padding: 4px 5px;
+    background-color: #000000ba;
+    color: white;
+    border-radius: 20px;
+}
+
+.chip-skills i:hover{
+    background: black;
+}
+
+@media (max-width:1070px) {
+
+    .serV form {
+        width: 70%;
+        margin-top: 0;
+    }
+    
+}
+
+@media (max-width:775px) {
+
+    .serV form {
+        width: 85%;
+        padding: 5rem;
+    }
+    
+}
+
+@media(max-width:770px) {
+
+ 
+    .formWidthH{
+        background: white;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width:500px) {
+
+    .skillsList {
+        margin: 2rem 0;
+    }
+
+    .serV form {
+        width: 90%;
+        padding: 0;
+    }
+    .formWidthH form
+    .formWidthH{
+        background: white;
+    }
+}
